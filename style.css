@@ -1,0 +1,83 @@
+body {
+  background-color: #0d0d0d;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #9453a6;
+}
+
+a:hover {
+  color: #f2cc0f;
+  text-shadow: 0 1px 2px #f2f2f2;
+}
+
+header {
+  background-image: url(img/download.png);
+  background-size: 100px 100%;
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  color: #f2cc0f;
+  font-size: 2rem;
+}
+
+.nav-link:hover {
+  padding: 2px;
+  color: #9453a6;
+}
+
+.nav-item {
+  color: #f2cc0f;
+  font-size: 2rem;
+}
+
+.nav-item:hover {
+  padding: 2px;
+  color: #9453a6;
+}
+
+.card-cover {
+  background-size: 355px 130px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.card-button {
+  color: #9453a6;
+  -webkit-box-shadow: 0 2 4 #f2f2f2;
+          box-shadow: 0 2 4 #f2f2f2;
+}
+
+.card-button:hover {
+  color: #f2cc0f;
+  text-shadow: 0px 4px 10px #9453a6;
+}
+
+.me-3 {
+  font-size: 2rem;
+  color: #9453a6;
+  text-shadow: 0 1px 1px #f2cc0f;
+  hover-color: #8cbf3f;
+}
+
+.btn {
+  border-color: #8cbf3f;
+  color: #f2f2f2;
+}
+
+.btn-primary {
+  background-color: #9453a6;
+}
+
+.btn:hover {
+  background-color: #f2cc0f;
+}
+/*# sourceMappingURL=style.css.map */

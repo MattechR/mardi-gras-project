@@ -1,0 +1,80 @@
+$primary: #9453a6;
+$secondary: #8cbf3f;
+$third: #f2cc0f;
+$white-c: #f2f2f2;
+$black-c: #0d0d0d;
+
+body {
+  background-color: $black-c;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    color: $third;
+    text-shadow: 0 1px 2px $white-c;
+  }
+}
+
+header {
+  background-image: url(img/download.png);
+  background-size: 100px 100%;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  &-link {
+    color: $third;
+    font-size: 2rem;
+    &:hover {
+      padding: 2px;
+      color: $primary;
+    }
+  }
+  &-item {
+    color: $third;
+    font-size: 2rem;
+    &:hover {
+      padding: 2px;
+      color: $primary;
+    }
+  }
+}
+
+.card {
+  &-cover {
+    background-size: 355px 130px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-align: center;
+    flex-flow: column;
+  }
+  &-button {
+    color: $primary;
+    box-shadow: 0 2 4 $white-c;
+    &:hover {
+      color: #f2cc0f;
+      text-shadow: 0px 4px 10px $primary;
+    }
+  }
+}
+.me-3 {
+  font-size: 2rem;
+  color: $primary;
+  text-shadow: 0 1px 1px $third;
+  hover: {
+    color: $secondary;
+  }
+}
+.btn {
+  border-color: $secondary;
+  color: $white-c;
+  &-primary {
+    background-color: $primary;
+  }
+  &:hover {
+    background-color: $third;
+  }
+}
