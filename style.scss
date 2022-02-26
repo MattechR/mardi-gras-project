@@ -4,77 +4,87 @@ $third: #f2cc0f;
 $white-c: #f2f2f2;
 $black-c: #0d0d0d;
 
+::-webkit-scrollbar {
+  display: none;
+}
 body {
-  background-color: $black-c;
+  background-color: $secondary;
   font-family: "Roboto", sans-serif;
+  border-radius: 20px;
 }
-
-a {
-  text-decoration: none;
-  color: $primary;
-  &:hover {
-    color: $third;
-    text-shadow: 0 1px 2px $white-c;
-  }
+footer {
+  background-color: $black-c;
+  border-radius: 20px;
 }
-
-header {
-  background-image: url(img/download.png);
-  background-size: 100px 100%;
-  background-repeat: no-repeat;
-}
-
 .nav {
-  &-link {
-    color: $third;
-    font-size: 2rem;
-    &:hover {
-      padding: 2px;
-      color: $primary;
-    }
-  }
-  &-item {
-    color: $third;
-    font-size: 2rem;
-    &:hover {
-      padding: 2px;
-      color: $primary;
-    }
-  }
-}
-
-.card {
-  &-cover {
-    background-size: 355px 130px;
-    background-repeat: no-repeat;
+  &bar {
+    background-color: $black-c;
     border-radius: 20px;
-    text-align: center;
-    flex-flow: column;
   }
-  &-button {
+  &-link {
     color: $primary;
-    box-shadow: 0 2 4 $white-c;
+    font-size: 2rem;
     &:hover {
-      color: #f2cc0f;
-      text-shadow: 0px 4px 10px $primary;
+      color: $third;
+      padding: 2px;
+    }
+    &-item {
+      color: $primary;
+      font-size: 2rem;
+      &:hover {
+        color: $third;
+        padding: 2px;
+      }
     }
   }
-}
-.me-3 {
-  font-size: 2rem;
-  color: $primary;
-  text-shadow: 0 1px 1px $third;
-  hover: {
-    color: $secondary;
+
+  .body-image {
+    background-color: $black-c;
+    background-image: url(img/8.jpg);
+    box-shadow: 0 2px 6px $third;
+    border-radius: 20px;
+    margin-top: 100px;
   }
-}
-.btn {
-  border-color: $secondary;
-  color: $white-c;
-  &-primary {
-    background-color: $primary;
+
+  a {
+    text-decoration: none;
   }
-  &:hover {
-    background-color: $third;
+  .page-title {
+    font-family: "Henny Penny";
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    color: $black-c;
+    text-shadow: 0 2px 4px $white-c;
+    box-shadow: 0 2px 4px $third;
+    border-radius: 20px;
+  }
+  .card {
+    &-cover {
+      background-size: 355px 140px;
+      background-repeat: no-repeat;
+      background-size: 100;
+      border-radius: 20px;
+      text-align: center;
+    }
+    &-button {
+      color: $primary;
+      box-shadow: 0 2 4 $white-c;
+      &:hover {
+        color: #f2cc0f;
+        text-shadow: 0px 4px 10px $primary;
+      }
+    }
+  }
+  .carousel {
+    &-slide {
+      border-radius: 20px;
+    }
+    &-inner {
+      border-radius: 20px;
+    }
+    &-item {
+      border-radius: 20px;
+    }
   }
 }

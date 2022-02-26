@@ -1,83 +1,96 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  background-color: #0d0d0d;
+  background-color: #8cbf3f;
   font-family: "Roboto", sans-serif;
+  border-radius: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #9453a6;
+footer {
+  background-color: #0d0d0d;
+  border-radius: 20px;
 }
 
-a:hover {
-  color: #f2cc0f;
-  text-shadow: 0 1px 2px #f2f2f2;
-}
-
-header {
-  background-image: url(img/download.png);
-  background-size: 100px 100%;
-  background-repeat: no-repeat;
+.navbar {
+  background-color: #0d0d0d;
+  border-radius: 20px;
 }
 
 .nav-link {
-  color: #f2cc0f;
+  color: #9453a6;
   font-size: 2rem;
 }
 
 .nav-link:hover {
+  color: #f2cc0f;
   padding: 2px;
-  color: #9453a6;
 }
 
-.nav-item {
-  color: #f2cc0f;
+.nav-link-item {
+  color: #9453a6;
   font-size: 2rem;
 }
 
-.nav-item:hover {
+.nav-link-item:hover {
+  color: #f2cc0f;
   padding: 2px;
-  color: #9453a6;
 }
 
-.card-cover {
-  background-size: 355px 130px;
+.nav .body-image {
+  background-color: #0d0d0d;
+  background-image: url(img/8.jpg);
+  -webkit-box-shadow: 0 2px 6px #f2cc0f;
+          box-shadow: 0 2px 6px #f2cc0f;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav .page-title {
+  font-family: "Henny Penny";
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: #0d0d0d;
+  text-shadow: 0 2px 4px #f2f2f2;
+  -webkit-box-shadow: 0 2px 4px #f2cc0f;
+          box-shadow: 0 2px 4px #f2cc0f;
+  border-radius: 20px;
+}
+
+.nav .card-cover {
+  background-size: 355px 140px;
   background-repeat: no-repeat;
+  background-size: 100;
   border-radius: 20px;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
 }
 
-.card-button {
+.nav .card-button {
   color: #9453a6;
   -webkit-box-shadow: 0 2 4 #f2f2f2;
           box-shadow: 0 2 4 #f2f2f2;
 }
 
-.card-button:hover {
+.nav .card-button:hover {
   color: #f2cc0f;
   text-shadow: 0px 4px 10px #9453a6;
 }
 
-.me-3 {
-  font-size: 2rem;
-  color: #9453a6;
-  text-shadow: 0 1px 1px #f2cc0f;
-  hover-color: #8cbf3f;
+.nav .carousel-slide {
+  border-radius: 20px;
 }
 
-.btn {
-  border-color: #8cbf3f;
-  color: #f2f2f2;
+.nav .carousel-inner {
+  border-radius: 20px;
 }
 
-.btn-primary {
-  background-color: #9453a6;
-}
-
-.btn:hover {
-  background-color: #f2cc0f;
+.nav .carousel-item {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
