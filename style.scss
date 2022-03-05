@@ -7,13 +7,19 @@ $black-c: #0d0d0d;
 ::-webkit-scrollbar {
   display: none;
 }
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: $white-c;
   font-family: "Roboto", sans-serif;
   border-radius: 20px;
-}
-footer {
   color: $black-c;
+  text-shadow: 0 1px 2px $white-c;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .body-image {
@@ -22,19 +28,29 @@ footer {
   border-radius: 20px;
   margin-top: 100px;
 }
-a {
-  text-decoration: none;
-}
 .nav {
   &bar {
     background-color: $white-c;
+    background-color: $primary;
+    border-radius: 20px;
+    color: $black-c;
   }
-
   &-item {
     font-size: 2rem;
-    color: $black-c;
-    text-shadow: 0 2px 4px $white-c;
+    text-shadow: 0 1px 2px $white-c;
+    color: $secondary;
+    :hover {
+      color: $third;
+    }
   }
+  &-link {
+    color: $black-c;
+  }
+}
+
+.d-flex {
+  background-color: $primary;
+  border-radius: 20px;
 }
 .col {
   table-layout: fixed;
@@ -54,12 +70,13 @@ a {
   }
 }
 .page-title {
-  font-family: "Henny Penny" bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 5rem;
   letter-spacing: 2px;
-  color: $third;
-  text-shadow: 0 4px 6px $black-c;
+  color: $black-c;
+  text-shadow: 0 4px 6px $white-c;
   box-shadow: 0 2px 5px $secondary;
   border-radius: 20px;
   margin-top: 100px;
@@ -75,6 +92,116 @@ a {
     word-spacing: 2px;
   }
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+}
+#fname {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+  &:hover {
+    background-color: #f2cc0f;
+
+    opacity: 0.7;
+  }
+}
+#lname {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+  &:hover {
+    background-color: #f2cc0f;
+    opacity: 0.7;
+  }
+}
+#email {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+  &:hover {
+    background-color: #f2cc0f;
+    opacity: 0.7;
+  }
+}
+#message {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+  &:hover {
+    background-color: #f2cc0f;
+    opacity: 0.7;
+  }
+}
+#form-btn {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+  padding: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: #f2cc0f;
+    opacity: 0.7;
+  }
+}
+.accordion {
+  padding: 10px;
+  &-header {
+    background-color: $primary;
+    color: $black-c;
+    text-shadow: 0 1 2 $white-c;
+    border-radius: 20px;
+  }
+
+  &-button {
+    font-size: 2rem;
+    background-color: $primary;
+    color: $black-c;
+    text-shadow: 0 1 2 $white-c;
+    border-radius: 20px;
+    &:not(.collapsed) {
+      background-color: $primary;
+      color: $black-c;
+      text-shadow: 0 1 2 $white-c;
+      border-radius: 20px;
+    }
+  }
+
+  &-item {
+    background-color: $third;
+    color: $black-c;
+    text-shadow: 0 1 2 $white-c;
+    border-radius: 20px;
+  }
+}
+.button {
+  font-size: 1rem;
+  color: $black-c;
+  border: solid $black-c;
+  border-radius: 20px;
+  background-color: $secondary;
+  padding: 20px;
+  &:hover {
+    color: $primary;
+    background-color: $third;
+    opacity: 0.7;
+  }
+}
 /* Popup container */
 .popup {
   position: relative;
@@ -86,7 +213,7 @@ a {
 .popup .popuptext {
   visibility: hidden;
   max-width: 100%;
-  background-color: #555;
+  background-color: $black-c;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -107,7 +234,7 @@ a {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: $black-c transparent transparent transparent;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */

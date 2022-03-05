@@ -2,14 +2,18 @@
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: "Roboto", sans-serif;
   border-radius: 20px;
-}
-
-footer {
   color: #0d0d0d;
+  text-shadow: 0 1px 2px #f2f2f2;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .body-image {
@@ -20,18 +24,30 @@ footer {
   margin-top: 100px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .navbar {
   background-color: #f2f2f2;
+  background-color: #9453a6;
+  border-radius: 20px;
+  color: #0d0d0d;
 }
 
 .nav-item {
   font-size: 2rem;
+  text-shadow: 0 1px 2px #f2f2f2;
+  color: #8cbf3f;
+}
+
+.nav-item :hover {
+  color: #f2cc0f;
+}
+
+.nav-link {
   color: #0d0d0d;
-  text-shadow: 0 2px 4px #f2f2f2;
+}
+
+.d-flex {
+  background-color: #9453a6;
+  border-radius: 20px;
 }
 
 .col {
@@ -51,12 +67,13 @@ a {
 }
 
 .page-title {
-  font-family: "Henny Penny" bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 5rem;
   letter-spacing: 2px;
-  color: #f2cc0f;
-  text-shadow: 0 4px 6px #0d0d0d;
+  color: #0d0d0d;
+  text-shadow: 0 4px 6px #f2f2f2;
   -webkit-box-shadow: 0 2px 5px #8cbf3f;
           box-shadow: 0 2px 5px #8cbf3f;
   border-radius: 20px;
@@ -73,6 +90,139 @@ a {
   word-spacing: 2px;
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#fname {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+}
+
+#fname:hover {
+  background-color: #f2cc0f;
+  opacity: 0.7;
+}
+
+#lname {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+}
+
+#lname:hover {
+  background-color: #f2cc0f;
+  opacity: 0.7;
+}
+
+#email {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+}
+
+#email:hover {
+  background-color: #f2cc0f;
+  opacity: 0.7;
+}
+
+#message {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+}
+
+#message:hover {
+  background-color: #f2cc0f;
+  opacity: 0.7;
+}
+
+#form-btn {
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #f2f2f2;
+  background-color: #8cbf3f;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#form-btn:hover {
+  background-color: #f2cc0f;
+  opacity: 0.7;
+}
+
+.accordion {
+  padding: 10px;
+}
+
+.accordion-header {
+  background-color: #9453a6;
+  color: #0d0d0d;
+  text-shadow: 0 1 2 #f2f2f2;
+  border-radius: 20px;
+}
+
+.accordion-button {
+  font-size: 2rem;
+  background-color: #9453a6;
+  color: #0d0d0d;
+  text-shadow: 0 1 2 #f2f2f2;
+  border-radius: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #9453a6;
+  color: #0d0d0d;
+  text-shadow: 0 1 2 #f2f2f2;
+  border-radius: 20px;
+}
+
+.accordion-item {
+  background-color: #f2cc0f;
+  color: #0d0d0d;
+  text-shadow: 0 1 2 #f2f2f2;
+  border-radius: 20px;
+}
+
+.button {
+  font-size: 1rem;
+  color: #0d0d0d;
+  border: solid #0d0d0d;
+  border-radius: 20px;
+  background-color: #8cbf3f;
+  padding: 20px;
+}
+
+.button:hover {
+  color: #9453a6;
+  background-color: #f2cc0f;
+  opacity: 0.7;
+}
+
 /* Popup container */
 .popup {
   position: relative;
@@ -84,7 +234,7 @@ a {
 .popup .popuptext {
   visibility: hidden;
   max-width: 100%;
-  background-color: #555;
+  background-color: #0d0d0d;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -105,7 +255,7 @@ a {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #0d0d0d transparent transparent transparent;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */

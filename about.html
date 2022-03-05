@@ -10,6 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -23,28 +26,34 @@
   </div>
   <body>
     <header>
-    <div class="container">
-      <nav class="navbar navbar-expand-md fixed-top navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/download.png" alt="logo" width="70px" ></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html"> About </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sponsor.html"> Sponsors </a>
-              </li>
-            </ul>
+      <div class="container">
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/download.png" alt="logo" width="70px" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sponsor.html"> Sponsors </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="media.html"> Media </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"> Contact Us </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      </header>
+        </nav>
+        </header>
       <div class="body-image">
-        <h1 class="page-title">About Mardi Gras</h1>
+        <h1 class="page-title" style="font-family: 'Henny Penny';">About Mardi Gras</h1>
         <div class="about-text">
         <p>The holiday of <b><a href="/wiki/Mardi_Gras" title="Mardi Gras">Mardi Gras</a></b> is celebrated in all of <a href="/wiki/Louisiana" title="Louisiana">Louisiana</a>, including the city of <a href="/wiki/New_Orleans" title="New Orleans">New Orleans</a>. Celebrations are concentrated for about two weeks before and through <a href="/wiki/Shrove_Tuesday" title="Shrove Tuesday">Shrove Tuesday</a>, the day before <a href="/wiki/Ash_Wednesday" title="Ash Wednesday">Ash Wednesday</a> (the start of lent in the <a href="/wiki/Western_Christian" class="mw-redirect" title="Western Christian">Western Christian</a> tradition). Usually there is one major parade each day (weather permitting); many days have several large parades. The largest and most elaborate parades take place the last five days of the Mardi Gras season. In the final week, many events occur throughout New Orleans and surrounding communities, including <a href="/wiki/Parade" title="Parade">parades</a> and <a href="/wiki/Ball_(dance)" class="mw-redirect" title="Ball (dance)">balls</a> (some of them <a href="/wiki/Masquerade_ball" title="Masquerade ball">masquerade balls</a>).
         </p>
@@ -93,15 +102,16 @@
         </div>
     </div class="body-image">
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 ">© 2021 Company, Inc</p>
-    
-        <ul class="nav col-md-4 justify-content-end">
+      <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-2 border-top" style="background-color: #9453a6;">
+        <ul class="nav col-md-3 justify-content-end">
           <li class="nav-item"><div class="popup" onclick="myFunction()">Acknowledgment
-            <span class="popuptext" id="myPopup"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PopTech-_LaToya_Cantrell_%28cropped%29.jpg/220px-PopTech-_LaToya_Cantrell_%28cropped%29.jpg"> LaToya Cantre is the mayor of New Orleans, we acknowledge the hard work she does to make this fesitval happen.<br> </span>
-          </div></li>
-          <li class="nav-item"><a href="#" class="nav-link1 px-2 ">FAQs</a></li>
+            <span class="popuptext" id="myPopup" style="font-size: 16px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PopTech-_LaToya_Cantrell_%28cropped%29.jpg/220px-PopTech-_LaToya_Cantrell_%28cropped%29.jpg"> LaToya Cantre is the mayor of New Orleans, we acknowledge the hard work she does to make this fesitval happen.<br> </span>
+          </li>
+          <li class="nav-item"><a href="faq.html" class="nav-link px-2 ">FAQs</a>
+        </li>
         </ul>
+        <p class="col-md-3 mb-0 ">© 2021 Company, Inc</p>
       </footer>
+      </div>
   </body>
 </html>
