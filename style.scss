@@ -11,19 +11,27 @@ $black-c: #0d0d0d;
 a {
   text-decoration: none;
 }
-
-body {
-  background-color: $white-c;
-  font-family: "Roboto", sans-serif;
-  border-radius: 20px;
-  color: $black-c;
-  text-shadow: 0 1px 2px $white-c;
-  font-size: 2rem;
-  text-align: center;
+@media only screen and (max-width: 740px) {
+  body {
+    background-color: $white-c;
+    font-family: "Roboto", sans-serif;
+    border-radius: 20px;
+    color: $black-c;
+    text-shadow: 0 1px 2px $white-c;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
-
 .body-image {
-  background-image: url(img/8.jpg);
+  background: -webkit-linear-gradient(
+    70deg,
+    $primary 40%,
+    $secondary 20%,
+    $third
+  );
+  background: -o-linear-gradient(70deg, $primary 40%, $secondary 20%, $third);
+  background: -moz-linear-gradient(70deg, $primary 40%, $secondary 20%, $third);
+  background: linear-gradient(70deg, $primary 40%, $secondary 20%, $third);
   box-shadow: 0 2px 6px $third;
   border-radius: 20px;
   margin-top: 100px;
@@ -36,20 +44,19 @@ body {
     color: $black-c;
   }
   &-item {
-    font-size: 2rem;
-    text-shadow: 0 1px 2px $white-c;
-    color: $secondary;
+    font-size: 2rem !important;
+    text-shadow: 0 1px 2px $white-c !important;
+    color: $secondary !important;
     :hover {
-      color: $third;
+      color: $third !important;
     }
   }
   &-link {
-    color: $black-c;
+    color: $black-c !important;
   }
 }
 
 .d-flex {
-  background-color: $primary;
   border-radius: 20px;
 }
 .col {
@@ -95,7 +102,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   margin: 20px;
   border-radius: 20px;
   align-items: center;
@@ -147,7 +154,6 @@ body {
   }
 }
 #form-btn {
-  text-align: center;
   border-radius: 20px;
   letter-spacing: 5px;
   text-shadow: 0 1px 2px #f2f2f2;
