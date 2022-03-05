@@ -6,18 +6,20 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: #f2f2f2;
-  font-family: "Roboto", sans-serif;
-  border-radius: 20px;
-  color: #0d0d0d;
-  text-shadow: 0 1px 2px #f2f2f2;
-  font-size: 2rem;
-  text-align: center;
+@media only screen and (max-width: 740px) {
+  body {
+    background-color: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    border-radius: 20px;
+    color: #0d0d0d;
+    text-shadow: 0 1px 2px #f2f2f2;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 .body-image {
-  background-image: url(img/8.jpg);
+  background: linear-gradient(70deg, #9453a6 40%, #8cbf3f 20%, #f2cc0f);
   -webkit-box-shadow: 0 2px 6px #f2cc0f;
           box-shadow: 0 2px 6px #f2cc0f;
   border-radius: 20px;
@@ -32,21 +34,20 @@ body {
 }
 
 .nav-item {
-  font-size: 2rem;
-  text-shadow: 0 1px 2px #f2f2f2;
-  color: #8cbf3f;
+  font-size: 2rem !important;
+  text-shadow: 0 1px 2px #f2f2f2 !important;
+  color: #8cbf3f !important;
 }
 
 .nav-item :hover {
-  color: #f2cc0f;
+  color: #f2cc0f !important;
 }
 
 .nav-link {
-  color: #0d0d0d;
+  color: #0d0d0d !important;
 }
 
 .d-flex {
-  background-color: #9453a6;
   border-radius: 20px;
 }
 
@@ -98,8 +99,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px;
   border-radius: 20px;
   -webkit-box-align: center;
@@ -161,7 +163,6 @@ body {
 }
 
 #form-btn {
-  text-align: center;
   border-radius: 20px;
   letter-spacing: 5px;
   text-shadow: 0 1px 2px #f2f2f2;
