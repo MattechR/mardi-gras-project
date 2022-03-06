@@ -20,6 +20,7 @@ a {
     text-shadow: 0 1px 2px $white-c;
     font-size: 2rem;
     text-align: center;
+    overflow-x: hidden;
   }
 }
 .body-image {
@@ -55,7 +56,12 @@ a {
     color: $black-c !important;
   }
 }
-
+.index {
+  &-text {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 .d-flex {
   border-radius: 20px;
 }
@@ -207,6 +213,11 @@ a {
     background-color: $third;
     opacity: 0.7;
   }
+}
+.vid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 /* Popup container */
 .popup {
